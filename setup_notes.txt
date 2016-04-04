@@ -1,0 +1,24 @@
+Ran into this error: 
+
+Reproject DEM to EPSG:3857  --->
+ERROR 6: Unable to load PROJ.4 library (libproj.so), creation of
+OGRCoordinateTransformation failed.
+
+Hoping to add this to the path..?
+
+___________________________
+Update: 14:53 on 09/04/2015
+***************************
+
+The problem is a bug that appears frequently in older versions of GDAL.
+
+According to the bug report (https://trac.osgeo.org/ubuntugis/ticket/2)
+the easy way to fix it is with this command:
+
+sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so
+
+This creates a symlink to the proper libproj.so file. I've added this 
+line to /etc/rc.local so this link is set every time the server boots as
+suggested in this forum thread: 
+
+http://www.linuxforums.org/forum/red-hat-fedora-linux/72832-how-make-symbolic-link-permanent.html
