@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # srtm-server
 =======
 # GDEM Error Realization Data Portal 
@@ -16,3 +17,7 @@ Ultimately, this project will be realized as a server side application running o
 ### References
 [1]: http://www.scopus.com/record/display.url?eid=2-s2.0-79953172857&origin=inward&txGid=5A18DE0C5E43C7B2354634EB15DCB820.aqHV0EoE4xlIF3hgVWgA%3a9
 >>>>>>> a852874d247a66c3b69baa60d0b2e0245cc0ca5a
+=======
+# srtm-server
+The official web page of the MSU Spatial Uncertainty Group including the tilestrata tileserver.
+>>>>>>> 8f67328fdec5822c7a0991d8156fc3acd0af1556
