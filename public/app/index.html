@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head lang="en">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="UTF-8">
-    <title>SRTM Data Portal</title>
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
-    <link type="text/css" rel="stylesheet" href="./_css/main.css"/>
-		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-  </head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="UTF-8">
+        <title>SRTM Data Portal</title>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+
+        <link type="text/css" rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+        <link type="text/css" rel="stylesheet" href="./_css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    </head>
 	<body>
 		<div id="sidebar" class="sidebar collapsed">
         <!-- Nav tabs -->
@@ -32,18 +33,22 @@
                     SRTM Data Portal
                     <div class="sidebar-close"><i class="fa fa-caret-left"></i></div>
                 </h1>
-
-							<p><i>A portal for downloading SRTM and ASTER GDEM data and error realizations. Project funded by the National Geospatial-Intelligence Agency (NGA) and conducted in partnership with Dr. Ashton Shortridge and Dr. Joe Messina of Michigan State University. All web-related code is written by Nicholas Ronnei.</i></p>
-							<h3>Background</h3>
-              <p>The project centers on the use of open GDEM datasets such as those from SRTM and ASTER for important geospatial modeling such as watershed deliniation, floodplain modeling, and erosion control planning to name a few. The error inherent in these datasets is not random - it is spatially structured (Shortridge, A. &amp; Messina, J., 2011). Statistical modeling of the relationships between various landscape and data charateristics reveals that error in these datasets can be predicted. The goal of this project is to make these predictions available to the public so that they may be used in research.</p>
-							
-							<h3>Current Progress</h3>
-							
-                <p class="lorem">At the time of writing (9/3/2015), the project is in its early stages. This GitHub Repo will contain only the front-end work for the time being. The back-end is finished, but only in a prototype state. When the time comes to rewrite the backend to reflect the ultimate form of our application, the whole project will move to GitHub. Currently, we are working on implementing a responsive, intuitive front-end using Material Design so that it will work with any modern browser on any device. We are in the earliest stages, but plan to have a usable prototype within the next two weeks</p>
-
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p>
+                    <i>
+                        A portal for downloading SRTM and ASTER GDEM data and error realizations. Project funded by the National Geospatial-Intelligence Agency (NGA) and conducted in partnership with Dr. Ashton Shortridge and Dr. Joe Messina of Michigan State University. All web-related code is written by Nicholas Ronnei.
+                    </i>
+                </p>
+                <h3>Background</h3>
+                <p>
+                    The project centers on the use of open GDEM datasets such as those from SRTM and ASTER for important geospatial modeling such as watershed deliniation, floodplain modeling, and erosion control planning to name a few. The error inherent in these datasets is not random - it is spatially structured (Shortridge, A. &amp; Messina, J., 2011). Statistical modeling of the relationships between various landscape and data charateristics reveals that error in these datasets can be predicted. The goal of this project is to make these predictions available to the public so that they may be used in research.
+                </p>
+                <h3>Current Progress</h3>
+               <p class="lorem">
+                   At the time of writing (4/6/2016), the project has advanced a great deal from last fall.  The GitHub repository now contains the code for the server and the project's official website.  The server is built using well-documented, actively developed open source libraries so that it is transparent, simple, and easy to copy and modify for anyone who wishes to do so.  Much of our work since the previous update (9/3/2015) has focused on back-end development, specifically on the development of database functions for selecting, manipulating, and distributing data.  These features are still under heavy development and not yet ready for production. When they become ready, they will also appear on GitHub.
+               </p>
+               <p>
+                   We are also working on developing an intuitive and responsive user interface that will enable researchers visiting the site to have more meaningful interactions with the data.  This UI design will work on any size screen, from gigantic TV to mobile phone, to accommodate the diverse conditions under which international researchers operate.  It will also be intuitive and use widely recognized symbols for each tool to limit the language barrier and improve usability for international researchers.  This will be the final stage of development, as it is most likely to change in the future and because the back end and middleware of the system can be plugged into other front ends as desired. Be sure to check back for progress, or visit the <a href="../index.html" target="_parent">project website</a>  for updates.
+               </p>
             </div>
 
             <div class="sidebar-pane" id="profile">
