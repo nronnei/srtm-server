@@ -3,7 +3,7 @@
 
 ## Background
   
-The project centers on the use of open GDEM datasets such as those from SRTM and ASTER for important geospatial modeling such as watershed deliniation, floodplain modeling, and erosion control planning to name a few.  The error inherent in these datasets is not random - it is spatially structured ([Shortridge, A. & Messina, J., 2011][1]).  Statistical modeling of the relationships between various landscape and data charateristics reveals that error in these datasets can be predicted.  The goal of this project is to make these predictions available to the public so that they may be used in research.
+The project centers on the use of open GDEM datasets such as those from SRTM and ASTER for important geospatial modeling such as watershed deliniation, floodplain modeling, and erosion control planning to name a few.  The error inherent in these datasets is not random - it is spatially structured ([Shortridge & Messina, 2011][1]).  Statistical modeling of the relationships between various landscape and data characteristics reveals that error in these datasets can be predicted.  The goal of this project is to make these predictions available to the public so that they may be used in research.
 
 ## Current Progress
 
@@ -27,11 +27,11 @@ To run the node server, we use these `node_modules`:
 - Tilestrata Disk
 - Tilestrata Dependency
 - Tilestrata Mapnik
-- Express JS
+- Express
 - Path (if you don't have NodeJS core modules installed)
 
 In the root directory of the repo, use this one liner to install NodeJS dependencies:
+
 `npm install tilestrata tilestrata-disk tilestrata-dependency tilestrata-mapnik express path`
 
-### References
-[1]: http://www.scopus.com/record/display.url?eid=2-s2.0-79953172857&origin=inward&txGid=5A18DE0C5E43C7B2354634EB15DCB820.aqHV0EoE4xlIF3hgVWgA%3a9
+[1]: https://www.researchgate.net/profile/Joseph_Messina/publication/251494112_Spatial_structure_and_landscape_associations_of_SRTM_error/links/5582c55108aeab1e46685008.pdf
