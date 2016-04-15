@@ -118,11 +118,13 @@ var gratStyle = {
 	color: '#555555',
 	opacity: 1
 };
-var gratLayer = L.geoJson(graticle, {style: gratStyle,
-																 onEachFeature: function (feature, layer) {
-																	 layer.bindPopup('<p><b>Tile: </b> '+feature.properties.tilename+'</p>'+
-																									 '<a target=_blank href="../_src/zips/'+feature.properties.tilename+'.zip">Download Error Sims</a>');}
-																});
+var gratLayer = L.geoJson(graticle, {
+    style: gratStyle,
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<p><b>Tile: </b> '+feature.properties.tilename+'</p>'+
+            '<a target=_blank href="../sims/zips/'+feature.properties.tilename+'.zip">Download Error Sims</a>');
+    }
+});
 
 ////
 // Set controls
